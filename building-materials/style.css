@@ -7,6 +7,9 @@
   --privacy-color: rgb(11, 9, 16);
   --background-color: rgb(255, 244, 196);
   --background-nav-color: rgb(240, 229, 186);
+  --logo-color: rgb(30, 93, 157);
+  --logo-color-hover: rgb(108, 145, 181);
+  --test-color-revers: rgb(240, 248, 255);
 }
 
 * {
@@ -101,7 +104,8 @@ body {
   cursor: pointer;
   text-transform: uppercase;
   padding: 0.5rem 1.5rem;
-  background-color: var(--contacts-color);
+  color: var(--test-color-revers);
+  background-color: var(--logo-color);
   box-sizing: border-box;
   border: none;
   outline: none;
@@ -110,7 +114,8 @@ body {
   transition: all 0.3s;
 }
 #submit:hover {
-  background-color: rgb(103, 193, 253);
+  color: var(--privacy-color);
+  background-color: var(--logo-color-hover);
   transition: all 0.5s;
 }
 
@@ -169,7 +174,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-size: 130%;
-  background-color: var(--contacts-color);
+  color: var(--test-color-revers);
+  background-color: var(--logo-color);
   padding: 0.7rem 0;
   border-radius: 5px 5px 0 0;
 }
@@ -196,17 +202,19 @@ body {
   cursor: pointer;
   text-transform: uppercase;
   padding: 0.5rem 1.5rem;
-  background-color: var(--contacts-color);
+  background-color: var(--logo-color);
   box-sizing: border-box;
   border: none;
   outline: none;
   border-radius: 5px;
   margin-bottom: 0.8rem;
   transition: all 0.3s;
+  color: var(--test-color-revers);
 }
 
 .button-select-select:hover {
-  background-color: rgb(103, 193, 253);
+  color: var(--privacy-color);
+  background-color: var(--logo-color-hover);
   transition: all 0.5s;
 }
 
