@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+
+:root {
+  --contacts-color: rgb(153, 153, 247);
+  --copyright-color: rgb(73, 73, 128);
+  --border-color: rgb(11, 9, 16);
+  --privacy-color: rgb(11, 9, 16);
+  --background-color: rgb(255, 244, 196);
+  --background-nav-color: rgb(240, 229, 186);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
+}
+
+/* header section */
+
+.navbar {
+  position: fixed;
+  background-color: var(--background-color);
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.nav-logo {
+  padding-top: 0.3rem;
+  margin-left: 2rem;
+}
+
+.nav-logo img {
+  width: 30px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.building_materials {
+  margin-top: 1.3rem;
+  margin-left: 0.5rem;
+  position: absolute;
+  font-weight: bold;
+  font-size: 150%;
+  font-family: "Lato", sans-serif;
+  color: var(--privacy-color);
+}
+
+.navbar-select {
+  width: 100%;
+  display: flex;
+  margin-top: 1.3rem;
+  margin-left: 45rem;
+}
+
+.nav-select {
+  padding: 0 15px;
+}
+
+.nav-link {
+  cursor: pointer;
+  color: var(--privacy-color);
+  font-size: 120%;
+  text-decoration: none;
+  margin-right: 5rem;
+}
+
+/* input section */
+
+.form {
+  display: block;
+}
+
+.natural-materials {
+  color: var(--privacy-color);
+  padding-top: 6rem;
+  text-align: center;
+  font-size: 170%;
+}
+
+.form-action {
+  margin-top: 1rem;
+}
+
+.form-action input {
+  display: block;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+#email {
+  padding: 0.3rem 2rem;
+  text-align: center;
+}
+
+#submit {
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--contacts-color);
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 0.8rem;
+  transition: all 0.3s;
+}
+#submit:hover {
+  background-color: rgb(103, 193, 253);
+  transition: all 0.5s;
+}
+
+/* main section */
+
+.main {
+  margin-top: 3rem;
+}
+.premium-delivery-guarantee {
+  margin-left: 20%;
+  margin-bottom: 3rem;
+}
+
+.premium-delivery-guarantee-img img {
+  padding-top: 5px;
+  width: 60px;
+}
+.premium,
+.delivery,
+.guarantee {
+  display: flex;
+  margin-top: 3rem;
+}
+.premium-delivery-guarantee-description {
+  width: 70%;
+  margin-left: 3rem;
+}
+
+/* video section */
+
+.building__video {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.our-goods {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  margin-bottom: 2rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.best-bamboo,
+.best-straw,
+.best-clay {
+  margin: 0 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.best-materials__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 130%;
+  background-color: var(--contacts-color);
+  padding: 0.7rem 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.materials-price {
+  text-align: center;
+  font-size: 180%;
+  margin: 0.5rem 0;
+}
+
+.best-materials__description {
+  text-align: center;
+  margin: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.button-select {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button-select-select {
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--contacts-color);
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 0.8rem;
+  transition: all 0.3s;
+}
+
+.button-select-select:hover {
+  background-color: rgb(103, 193, 253);
+  transition: all 0.5s;
+}
+
+/* footer section */
+
+.footer {
+  background-color: var(--contacts-color);
+  justify-content: end;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.footer ul {
+  justify-content: end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer ul li {
+  margin: 0 1.5rem;
+}
+
+.contacts {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--privacy-color);
+}
+
+.copyright {
+  font-family: "Lato", sans-serif;
+  color: var(--copyright-color);
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: end;
+}
