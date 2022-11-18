@@ -27,14 +27,22 @@ body {
 
 .navbar {
   position: fixed;
-  background-color: var(--background-color);
+  background-color: var(--background-nav-color);
   margin-bottom: 1.5rem;
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  top: 0;
+  left: 0;
 }
 
 .nav-logo {
+  display: flex;
   padding-top: 0.3rem;
-  margin-left: 2rem;
+  padding-left: 2rem;
+  align-items: center;
 }
 
 .nav-logo img {
@@ -43,21 +51,8 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.building_materials {
-  margin-top: 1.3rem;
-  margin-left: 0.5rem;
-  position: absolute;
-  font-weight: bold;
-  font-size: 150%;
-  font-family: "Lato", sans-serif;
-  color: var(--privacy-color);
-}
-
 .navbar-select {
-  width: 100%;
   display: flex;
-  margin-top: 1.3rem;
-  margin-left: 45rem;
 }
 
 .nav-select {
@@ -69,18 +64,27 @@ body {
   color: var(--privacy-color);
   font-size: 120%;
   text-decoration: none;
-  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.building_materials {
+  margin-top: 1.3rem;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  font-size: 150%;
+  font-family: "Lato", sans-serif;
+  color: var(--privacy-color);
 }
 
 /* input section */
 
 .form {
   display: block;
+  padding: 6rem 1rem;
 }
 
 .natural-materials {
   color: var(--privacy-color);
-  padding-top: 6rem;
   text-align: center;
   font-size: 170%;
 }
@@ -125,7 +129,7 @@ body {
   margin-top: 3rem;
 }
 .premium-delivery-guarantee {
-  margin-left: 20%;
+  padding-left: 20%;
   margin-bottom: 3rem;
 }
 
@@ -161,6 +165,14 @@ body {
   margin-left: 10%;
   margin-right: 10%;
 }
+
+/* @media {
+  .our-goods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+} */
 
 .best-bamboo,
 .best-straw,
@@ -198,7 +210,7 @@ body {
   align-items: center;
 }
 
-.button-select-select {
+.button-card-title {
   cursor: pointer;
   text-transform: uppercase;
   padding: 0.5rem 1.5rem;
@@ -238,7 +250,11 @@ body {
 }
 
 .footer ul li {
-  margin: 0 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.footer ul li:last-child {
+  right: 0;
 }
 
 .contacts {
